@@ -1,0 +1,4 @@
+{
+	"dataType" : ['Numeric', 'Integer', 'Binary', 'Factor', 'Date', 'Text'],
+	"matrix" : null
+}

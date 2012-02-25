@@ -1,0 +1,139 @@
+body {
+	background-color: #efefef;
+}
+
+div.box, div.column-box, div.error {
+	width: 90%;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #FF7200;
+	margin: 5px;
+}
+
+
+div.error {
+	border: 1px solid #f00;
+	font-size: 15px;
+}
+
+div.column-box {
+	background-color: #fff;
+	border: 1px solid #FF7200;
+}
+
+div.column, div.predict-column, div.result {
+	margin: 2px;
+	padding: 2px;
+	width: 260px;
+	height: 60px;
+	border: 1px dotted #FF7200;
+	display: inline-table;
+	background-color: #fff;
+}
+
+div.result {
+	width: 390px;
+}
+div.plot {
+	margin: 5px;
+	width: 380px;
+	height: 100px;
+}
+
+
+
+div.predict-column {
+	background-color: #fec;
+}
+
+h2 {
+	margin: 2px;
+	margin-left: 0px;
+	color: #222;
+}
+
+p {
+	margin: 5px;
+	padding: 0px;
+}
+
+.main {
+	font-family: Helvetica,sans-serif,arial;
+	font-size: 12px;	
+	width: 900px;
+	margin: auto;
+}
+
+blockquote {
+	background-color: #fec;
+	font-family: Courier,fixed;
+	white-space: pre;
+	font-size: 13px;
+	width:auto;
+	margin-left:50px;
+	padding: 5px;
+}
+
+.nav-link {
+	color: #ff7200;
+	text-decoration: none;
+}
+
+#claim {
+	display: none;
+	margin: 0px;
+}
+
+span#owner 
+{
+	padding: 0px;
+}
+
+svg {
+	float: left;
+}
+
+
+input, button, input[type="checkbox"] {
+	border: #ccc 1px dotted;
+	font-weight: bold;
+	background-color: #efefef !important;
+	width: 245px;
+	color: #000;
+	margin: 5px;
+}
+
+
+.info {
+	display: block;
+	color: #222;
+	margin-left: 5px;
+	float: top;
+}
+
+p.info {
+	position: relative;
+	top: -2ex;
+}
+
+p.predict {
+	position: relative;
+	width: 15px;
+	left: 228px;
+	top: -14ex;
+	display: inline;
+}
+
+
+
+button {
+	border: #ff7200 1px dotted;
+	background-color: #efefef;
+	width: 100px;
+}
+
+input.editable-big {
+	font-size: 18px;
+}
+
+

@@ -1,0 +1,33 @@
+{
+	"name":null,	"owner":null,	"size":8168,
+	"estRows":101,
+	"column": [
+		{"dataType": "Binary", "name": "X", "predict": 0,
+		 "stats": { "min":0.000000, "max":1.000000, "mean":0.500000, "stddev":0.500000, "quartiles":[0.000000,1.000000,1.000000]
+		}},
+		{"dataType": "Integer", "name": "age", "predict": 0,
+		 "stats": { "min":0.000000, "max":99.000000, "mean":49.500000, "stddev":28.866070, "quartiles":[25.000000,50.000000,75.000000]
+		}},
+		{"dataType": "Integer", "name": "count", "predict": 0,
+		 "stats": { "min":33531.000000, "max":3981826.000000, "mean":198675.660000, "stddev":414140.603686, "quartiles":[56867.000000,105088.000000,205594.000000]
+		}},
+		{"dataType": "Integer", "name": "returns", "predict": 0,
+		 "stats": { "min":27422.000000, "max":2691060.000000, "mean":161224.570000, "stddev":289089.865052, "quartiles":[47224.000000,89345.000000,174663.000000]
+		}},
+		{"dataType": "Integer", "name": "sum_next_use_age", "predict": 0,
+		 "stats": { "min":2865489.000000, "max":20307788.000000, "mean":4594014.610000, "stddev":1742522.601981, "quartiles":[3870157.000000,4596104.000000,5085068.000000]
+		}},
+		{"dataType": "Numeric", "name": "pr", "predict": 1,
+		 "stats": { "min":0.675836, "max":0.857783, "mean":0.840259, "stddev":0.020187, "quartiles":[0.832479,0.846195,0.850422]
+		}},
+		{"dataType": "Numeric", "name": "days_till_next_use", "predict": 1,
+		 "stats": { "min":5.034760, "max":7.546390, "mean":6.260609, "stddev":0.490471, "quartiles":[5.936631,6.386845,6.607014]
+		}},
+		{"dataType": "Date", "name": "date", "predict": 0,
+		 "stats": { "min":900306000.000000, "max":1313038800.000000, "mean":1007445456.000000, "stddev":76143264.546050, "quartiles":[945925200.000000,998974800.000000,1056949200.000000]
+		}},
+		{"dataType": "Factor", "name": "month", "predict": 0,
+		 "stats": { "min":0.000000, "max":11.000000, "mean":5.400000, "stddev":3.563706, "quartiles":[2.000000,5.000000,8.000000]
+		}},
+	]
+}

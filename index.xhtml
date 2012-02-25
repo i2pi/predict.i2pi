@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>predict.i2pi csv upload</title>
+   <link rel="stylesheet" href="style.css" type="text/css" />
+   <script type="text/javascript" src="http://www.google-analytics.com/ga.js" />
+ </head>
+ <body>
+<div class="home">
+	<div class="redbox">
+	This service is no longer active. For a similar service, check out <a href="http://code.google.com/apis/predict/">Google Predict</a>.
+	</div>
+	<div class="box">
+		<h1>Upload CSV file</h1>
+		<form action="upload.cgi" method="post" enctype="multipart/form-data">
+			<p> <input type="file" class="file" name="csv_file" /> 
+			 <input type="submit" name="Submit" value="upload" /> </p>
+   		</form>
+	</div>
+	<div class="box">
+		<h2>Why?</h2>
+		<p>
+		predict.i2pi lets you upload a CSV file with observations and will try to come up with predictions for the data. 
+		</p>
+		<h2>Say What?</h2>
+		<p>
+		Upload a CSV file that looks a little somthing like this:
+		</p>
+		<blockquote>X1,    X2,    X3,    Name,  Date,        *Y
+12.3,  13.4,  8.32,  Terry, 2008-10-12,  736.0 
+ 9.3,  34.1,  1.21,   Josh, 2008-10-12,  NA		&lt;-- NB: NA response variables will have 
+...    ...    ...    ...    ...          ...                    predictions available for download.
+ 8.7,  38.7,  8.17,  Jess,  2009-01-07,  1823.1 </blockquote>	
+		<p>
+		Each row contains a single <b>observation</b> of one or more predictor and response variables. predict.i2pi tries to find a <b>model</b> to predict these responses from the predictor variables. Once the file has been uploaded we will begin processing it to find the best predictive models. The goodness of fit of each model is determined using out of sample data, in a standard train/test cycle. Multiple cycles are run for each model giving a range of values for the measure of fitness allowing you to get an idea of how robust the predictions are.
+		</p>
+		<p>
+		For any response variables with an NA value, we will save our predictions and allow you to download these predictions on the results page.
+		</p>
+		<p>
+		You can grab a sample CSV file <a href="demo.csv">here</a>. And this is what the <a href="http://predict.i2pi.com/zK7tuI9Q">output</a> looks like.
+		</p>
+		<h2>How?</h2>
+		<p>
+		Once you have uploaded your CSV file, we do our best to guess the datatype for each of the columns in the file, but you can correct our guesses if needed. We also look for column names that are prefixed with '*' to identify response variables. But again, you can change your response variables after the file is uploaded.
+		</p>
+		<h2>And then?</h2>
+		<p>
+		Our team of elves will work on your file, running it against a range of model types and keeping track of the best ones. Every now and then we will update your page indicating the best models to date.
+		</p>
+		<h2>Can I be an Elf?</h2>
+		<p>
+		Totally. The idea is to let those who develop statistical learning algorithms upload their algorithms while people who need predictions can upload their data. The system automagically matches data with algorithms and finds the best predictions. The idea is that elves get paid for their work by those who find their models useful. But with payment comes legalese. We need to get that in place before we launch this feature. If you are really eager get in touch with us at <a href="mailto:predict.better@i2pi.com">predict.better@i2pi.com</a> and we might be able to sneak you in.
+		</p>
+		<p>To learn a little bit more about how the system is implemented, and what types of algorithms can be written, check out my <a href="http://blog.i2pi.com/?p=194">blog post</a> on the matter.</p>
+		<h2>API?</h2>
+		<p>Q: Do you have an API?</p>
+		<p>A: Yep. View source. It's all there.</p>
+		<h2>Wouldn't it be cool if...</h2>
+		<p>Yes, it would be. Tell us <a href="mailto:predict.better@i2pi.com">predict.better@i2pi.com</a></p>
+	</div>
+</div>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3290173-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {
+	background-color: #111;
+}
+
+div.box, div.column-box, div.error {
+	width: 95%;
+	background-color: #222;
+	color: #fff;
+	padding: 5px;
+	border: 1px solid #333;
+	margin: auto;
+	margin-top: 5px;
+}
+
+div.redbox {
+	width: 95%;
+	background-color: #f22;
+	color: #fff;
+	padding: 5px;
+	font-size: 2em;
+	border: 3px solid #833;
+	margin: auto;
+	margin-top: 5px;
+}
+
+
+
+.summaryLeft {
+	width: 330px;
+	display: inline-table;
+	float: left;
+}
+
+.summaryRight {
+	display: inline;
+	width: 320px;
+};
+
+
+div.error {
+	border: 1px solid #f00;
+	font-size: 15px;
+}
+
+div.column-box {
+	background-color: #222;
+}
+
+div.column, div.predict-column, div.result {
+	margin: 2px;
+	height: 60px;
+	border: 1px solid #333;
+	display: inline-table;
+	background-color: #444;
+}
+
+div.column, div.predict-column {
+	width: 160px;
+}
+
+div.result {
+	width: 326px;
+	height: 100px;
+	border: 1px dotted #c87934;
+}
+
+div.plot {
+	margin: 5px;
+	width: 315px;
+	height: 100px;
+}
+
+div.column-plot {
+	margin: 5px;
+	width: 150px;
+	height: 60px;
+}
+
+
+div.predict-column {
+	border: 1px dotted #f70;
+}
+
+h1, h2 {
+	margin: 2px;
+	margin-left: 0px;
+	color: #f70;
+}
+
+p {
+	margin: 5px;
+	padding: 0px;
+}
+
+a:visited, a:link {
+	color: #c87934;
+//	text-decoration: none;
+	font-weight: bold;
+}
+
+.main, .home {
+	font-family: Helvetica,sans-serif,arial;
+	font-size: 12px;	
+	margin: auto;
+}
+
+.home {
+	width: 160ex;
+}
+
+blockquote {
+	background-color: #444;
+	color: #fec;
+	font-family: Courier,fixed;
+	white-space: pre;
+	font-size: 13px;
+	font-weight: bold;
+	width:auto;
+	margin-left:50px;
+	padding: 5px;
+}
+
+.nav-link {
+	color: #ff7200;
+	text-decoration: none;
+}
+
+#claim {
+	display: none;
+	margin: 0px;
+}
+
+span#owner 
+{
+	padding: 0px;
+}
+
+svg {
+	float: left;
+}
+
+
+textarea, input, button, input[type="checkbox"] {
+	border: #c87934 1px dotted;
+	font-weight: bold;
+	font-size: 12px;
+	background-color: #444 !important;
+	width: 148px;
+	color: #f70;
+	margin: 5px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+textarea {
+	width: 490px;
+}
+
+input.file {
+	width: 320px;
+}
+
+
+.info {
+	display: table;
+	color: #c87934;
+	margin-left: 5px;
+	float: top;
+}
+
+.measure, a.measure:link, a.measure:visited {
+	margin-left: 4px;
+	color: #f55;
+	font-weight: bold;
+}
+
+span.hist-text {
+}
+ 
+
+p.info {
+	position: relative;
+	top: -1ex;
+}
+
+p.predict {
+	position: relative;
+	width: 15px;
+	left: 228px;
+	top: -14ex;
+	display: inline;
+}
+
+
+button {
+	border: #ff7200 1px dotted;
+	background-color: #efefef;
+	width: 100px;
+}
+
+input.editable-big {
+	font-size: 18px;
+}
+
+

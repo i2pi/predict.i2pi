@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>#FILENAME#</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="common.js" />
+	<script type="text/javascript" src="json2.js" />
+	<script type="text/javascript" src="sprintf.js" />
+	<script type="text/javascript" src="http://www.google-analytics.com/ga.js" />
+</head>
+<body onload="myLoad('#FILENAME#');">
+	<div class="main" id="main">
+		<div class="box" id="summary">
+		<div class="summaryLeft">
+				<input id="name" class="editable-big" onchange="edit(this);" ></input> <br />
+			<!-- not yet
+				<span id="owner" class="info">
+						<span class="nav-link" onclick="showClaim();" id="claim-link">
+						click <b>login</b> to claim ownership
+						</span>
+						<div id="claim">
+							<input id="username" class="editable" />
+							<input id="password" type="password" class="editable" />
+							<button onclick="claim();">claim</button>
+						</div>
+				</span>
+			-->
+				<span class="info"> Size <span id="stats-size"></span> </span>
+				<span class="info"> Rows <span id="stats-rows"></span> </span>
+				<span class="info" id="raw-data">
+					<a href="data/#FILENAME#.json">Raw metadata (JSON)</a>
+				</span>
+		</div>
+		<div class="summaryRight">
+				<textarea id="description" class="editable"  rows="5" cols="40">description...  </textarea>
+				
+		</div>
+		</div>
+		<div class="column-box" id="columns">
+		</div>
+		<div class="box" id="results">
+		</div>
+	</div>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3290173-2");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+</body>
+</html>
